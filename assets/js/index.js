@@ -1,18 +1,28 @@
-
-function User(firstName, lastName, age, isMale) {
-  this.firstName = firstName;
-  this.lastName = lastName;
-  this.fullName = firstName  + lastName;
-  this.age = age;
-  this.isMale = isMale;
-
-  return;
+//Первое задание
+for (let i = 25; i > -1; i--) {
+  console.log(i);
 }
 
-const user1 = new User('Test', 'Testovich', 'Test Testovich', 18, false);
-const user2 = new User('Text', 'Textovich', 'Test Testovich', 20, false);
-const user3 = new User('Tost', 'Tostovich', 'Test Testovich', 21, true);
+//Второе задание
+//Вывод чисел от 10 до 50, которые кратны 5
+for (let i = 10; i <= 50; i++) {
+  if (i % 5 === 0) {
+    console.log(i);
+  }
+}
 
-console.log(user1);
-console.log(user2);
-console.log(user3);
+//Третье задание
+//Найти сумму чисел в пределах от 1 до 100.
+
+//4
+//предлагать пользователю решить пример (2 + 2 * 2) до тех пор, пока он его не решит
+const CORRECT_ANSWER = 6;
+while (true) {
+  const userInput = +prompt("(2 + 2 * 2)");
+  if (userInput === CORRECT_ANSWER) {
+    alert("pravilno!");
+    break;
+  }
+}
+
+
