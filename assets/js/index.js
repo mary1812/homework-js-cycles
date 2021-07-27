@@ -1,12 +1,52 @@
-//Даны числа 4, -2, 5, 19, -130, 0, 10. Найдите минимальное и максимальное число.
-const numbers = [4, -2, 5, 19, -130, 0, 10];
-const max = Math.max.apply(null, numbers);
-console.log(max);
-const min = Math.min.apply(null, numbers);
-console.log(min);
+function Phone(model, manufacturer, price, color, exist) {
+  this.model = model;
+  this.manufacturer = manufacturer;
+  this.price = price;
+  this.color = color;
+  this.comments = [];
+  this.exist = exist;
+}
 
-//Дан массив arr. Найдите среднее арифметическое его элементов. Проверьте задачу на массиве с элементами 12, 15, 20, 25, 59, 79.
+function getRandomInt(min, max) {
+  min = Math.ceil(min);
+  max = Math.floor(max);
+  return Math.floor(Math.random() * (max - min)) + min;
+}
 
-//=========(Math.random + Math.ceil/Math.floor/Math.round)==========
-//Выведите на экран случайное целое число от 1 до 100 с помощью функции.
-//Заполните массив 10-ю случайными целыми числами.
+function getPhones(amount) {
+  const newPhones = [];
+
+  for (let i = 0; i < amount; i++) {
+    newPhones.push(
+      new Phone(
+        `Model ${i}`,
+        "Panasonic",
+        getRandomInt(5, 1000),
+        "black",
+        Math.random() >= 0.5
+      )
+    );
+  }
+
+  return newPhones;
+}
+
+const phones = getPhones(50);
+
+console.table(phones);
+
+//1.Посчитать количество моделей телефонов в наличии и вывести в консоль
+//2.Получить массив тех телефонов, которые есть в наличии
+//3.Получить массив телефонов для праздничной распродажи. Всем телефонам которые стоят больше 30000 снизить цену на 30%.Работать только с телефонами, которые есть в наличии
+
+//1 Посчитать количество моделей телефонов в наличии и вывести в консоль
+const amount = phones.forEach(function exist(phone){
+  return exist;
+})
+console.log(amount)
+
+//2 Получить массив тех телефонов, которые есть в наличии
+const exist  = phones.filter(function exist(phone) {
+  return phone.exist === true;
+});
+console.log(exist)
