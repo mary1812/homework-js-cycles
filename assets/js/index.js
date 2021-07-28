@@ -13,16 +13,22 @@ for (let i = 10; i <= 50; i++) {
 
 //Третье задание
 //Найти сумму чисел в пределах от 1 до 100.
+let j = 0;
+for (let i = 1; i <= 100; i++) {
+  if (j +=i) {
+    console.log(j)
+  };
+}
 
 //4
 //предлагать пользователю решить пример (2 + 2 * 2) до тех пор, пока он его не решит
-const CORRECT_ANSWER = 6;
-while (true) {
-  const userInput = +prompt("(2 + 2 * 2)");
-  if (userInput === CORRECT_ANSWER) {
-    alert("pravilno!");
-    break;
-  }
-}
+// const CORRECT_ANSWER = 6;
+// while (true) {
+//   const userInput = +prompt("(2 + 2 * 2)");
+//   if (userInput === CORRECT_ANSWER) {
+//     alert("pravilno!");
+//     break;
+//   }
+// }
 
 
