@@ -20,15 +20,15 @@ for (let i = 1; i <= 100; i++) {
   };
 }
 
-//4
-//предлагать пользователю решить пример (2 + 2 * 2) до тех пор, пока он его не решит
-// const CORRECT_ANSWER = 6;
-// while (true) {
-//   const userInput = +prompt("(2 + 2 * 2)");
-//   if (userInput === CORRECT_ANSWER) {
-//     alert("pravilno!");
-//     break;
-//   }
-// }
+4
+предлагать пользователю решить пример (2 + 2 * 2) до тех пор, пока он его не решит
+const CORRECT_ANSWER = 6;
+while (true) {
+  const userInput = +prompt("(2 + 2 * 2)");
+  if (userInput === CORRECT_ANSWER) {
+    alert("pravilno!");
+    break;
+  }
+}
 
 
